@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title pepsi website landing page></title>
+        <link rel="stylesheet" href="css/syle.css">
+    </head>
+    <body>
+       <section class="sec">
+           <header>
+               <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Product</a></li>
+                   <li><a href="#">Whats New</a></li>
+                   <li><a href="#">Newsletter</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+           </header>
+           <div class="content">
+               <div class="textbox">
+                   <h2>That what <br><span>I like</span></h2>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla a aliquam id reprehenderit, harum distinctio aperiam
+                       . Sint, natus perferendis quo a esse aliquam, illo cupiditate repellat, tenetur tempore beatae debitis.</p>
+                       <a href="#"> View All product</a>
+                 </div>
+                 <div class="imgbox">
+                    <img src="img/pepsi.png" id="imgOne" alt="">
+                 </div>
+           </div>
+           <ul class="thumb">
+            <li><img src="img/pepsi_1.png" onclick= "document.getElementById('imgOne').src = 'img/pepsi_1.png';changeBgcolor('red')" /></li>
+            <li><img src="img/pepsi2.png" onclick= "document.getElementById('imgOne').src = 'img/pepsi2.png';changeBgcolor('black')"></li>
+            <li><img src="img/pepsi3.png" onclick= "document.getElementById('imgOne').src = 'img/pepsi3.png';changeBgcolor('green')"></li>
+
+            </ul>
+            
+       </section> 
+       <script type="text/javascript">
+    //    var imgOne = "img/pepsi 1.png"; 
+    //    var imgOne = "img/pepsi 2.png"; 
+    //    var imgOne = "img/pepsi 3.png"; 
+
+    //    function imgChange1(imgOne){
+    //        Document.queryselctor('.img').src =  imgOne;
+    //    }
+
+       function changeBgcolor(color){
+           const sec = document.querySelector('.sec');
+          sec .style.background = color;
+       }
+       </script>
+    </body>
+</html>
